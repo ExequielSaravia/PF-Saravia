@@ -1,0 +1,160 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    min-height: 70px;
+    background-color: #d39329;
+    align-items: center;
+    padding: 10px;
+  
+    .logotipo {
+      display: flex;
+      align-items: center;
+  
+      img {
+        height: 50px;
+        margin-right: 10px;
+      }
+    }
+  
+    .nombre-empresa {
+      color: black;
+    }
+  
+    .nav-links {
+      color: black;
+    }
+  
+    nav a {
+      font-weight: 600;
+      padding-right: 10px;
+    }
+  
+    @media (max-width: 600px) {
+      flex-direction: column;
+  
+      nav {
+        padding: 10px 0;
+      }
+    }
+  }
+  
+  footer {
+    background-color: #d39329;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  
+    .ma-footer {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .grid-items ul {
+      list-style: none;
+      padding: 0;
+    }
+  
+    .grid-items a {
+      color: black;
+    }
+  
+    .grid-items {
+      text-align: center;
+    }
+  
+    @media screen and (max-width: 600px) {
+      display: flex;
+      flex-direction: column;
+  
+      .grid-items {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  
+  .super-container {
+    background-color: #C2D345;
+    padding: 20px;
+  
+    h2 {
+      margin: 0;
+      text-align: center;
+    }
+  }
+  
+  .integrantes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* Espacio entre las columnas */
+  }
+  
+  .integrante-row {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+  
+    /* Ajusta según sea necesario */
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .integrantes-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .integrantes-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .subtitulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  
+  .product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .grid-produc {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+  
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .product-container {
+      grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    }
+  }
+  
