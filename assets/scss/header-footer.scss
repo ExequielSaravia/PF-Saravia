@@ -48,7 +48,7 @@ body {
   &nav {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content:center;
     width: 100%;
 
     &__links {
@@ -61,7 +61,7 @@ body {
       li {
         a {
           font-weight: 600;
-          padding-right: 10px;
+          padding-right: 30px;
           color: black;
         }
       }

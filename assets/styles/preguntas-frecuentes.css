@@ -53,7 +53,7 @@ body a {
 }
 .header__nav__links li a {
   font-weight: 600;
-  padding-right: 10px;
+  padding-right: 30px;
   color: black;
 }
 @media screen and (max-width: 768px) {
@@ -103,37 +103,17 @@ body a {
   margin-bottom: 10px;
 }
 
-.super-container {
-  background-color: #C2D345;
-  padding: 20px;
-}
-.super-container h2 {
-  margin: 0;
-  text-align: center;
-}
-.super-container .integrantes-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-.super-container .integrantes-grid .integrante-row {
-  text-align: center;
-  padding: 10px;
-  border: 1px solid #ddd;
-}
-.super-container .integrantes-grid .integrante-row img {
-  max-width: 100%;
-  height: auto;
-}
-@media (max-width: 768px) {
-  .super-container .integrantes-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (max-width: 576px) {
-  .super-container .integrantes-grid {
-    grid-template-columns: 1fr;
-  }
+.accordion-button {
+  background-color: #D39D2F;
+  color: #fff;
 }
 
-/*# sourceMappingURL=sobre-nosotros.css.map */
+.accordion-button[aria-expanded=true] {
+  background-color: #EDB748;
+}
+
+.accordion-body {
+  color: #7E6634;
+}
+
+/*# sourceMappingURL=preguntas-frecuentes.css.map */

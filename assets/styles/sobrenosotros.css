@@ -10,7 +10,7 @@ body a {
 .header__main {
   display: flex;
   justify-content: space-between;
-  min-height: 10vh;
+  min-height: 5vh;
   background-color: #d39329;
   align-items: center;
   padding: 10px;
@@ -25,14 +25,18 @@ body a {
 .header__logotipo {
   display: flex;
   align-items: center;
-  flex-direction: column;
 }
-.header__logotipo img {
-  height: 50px;
+.header__logotipo .logo-container {
+  display: flex;
+  align-items: center;
+}
+.header__logotipo .logo-container img {
   margin-right: 10px;
 }
-.header__logotipo__title {
+.header__logotipo .logo-container__title {
   color: black;
+  margin: 0;
+  text-decoration: none;
 }
 .header__nav {
   display: flex;
@@ -49,7 +53,7 @@ body a {
 }
 .header__nav__links li a {
   font-weight: 600;
-  padding-right: 10px;
+  padding-right: 30px;
   color: black;
 }
 @media screen and (max-width: 768px) {
@@ -103,6 +107,13 @@ body a {
   background-color: #C2D345;
   padding: 20px;
 }
+.super-container .presentacion .presentacion-breve {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 .super-container h2 {
   margin: 0;
   text-align: center;
@@ -113,6 +124,10 @@ body a {
   gap: 20px;
 }
 .super-container .integrantes-grid .integrante-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   padding: 10px;
   border: 1px solid #ddd;
@@ -120,6 +135,8 @@ body a {
 .super-container .integrantes-grid .integrante-row img {
   max-width: 100%;
   height: auto;
+  margin: auto;
+  display: block;
 }
 @media (max-width: 768px) {
   .super-container .integrantes-grid {

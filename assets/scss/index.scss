@@ -21,16 +21,22 @@
   .integrantes-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px; /* Espacio entre las columnas */
-
+    gap: 20px; 
+  
     .integrante-row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       text-align: center;
       padding: 10px;
       border: 1px solid #ddd;
-
+  
       img {
         max-width: 100%;
         height: auto;
+        margin: auto; // Esto centrará la imagen horizontalmente
+        display: block; // Añade display: block para alinear correctamente en algunos casos
       }
     }
   }

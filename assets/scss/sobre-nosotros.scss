@@ -3,7 +3,17 @@
 .super-container {
     background-color: #C2D345; 
     padding: 20px; 
-    
+    .presentacion
+    {
+        .presentacion-breve {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+    }
+     
+    }
     h2 {
         margin: 0;
         text-align: center;
@@ -13,18 +23,24 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 20px; 
-    
+      
         .integrante-row {
-            text-align: center;
-            padding: 10px;
-            border: 1px solid #ddd;
-    
-            img {
-                max-width: 100%;
-                height: auto;
-            }
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          padding: 10px;
+          border: 1px solid #ddd;
+      
+          img {
+            max-width: 100%;
+            height: auto;
+            margin: auto; // Esto centrará la imagen horizontalmente
+            display: block; // Añade display: block para alinear correctamente en algunos casos
+          }
         }
-    }
+      }
     
     @media (max-width: 768px) {
         .integrantes-grid {

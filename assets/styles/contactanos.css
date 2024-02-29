@@ -54,7 +54,7 @@ body a {
 }
 .header__nav__links li a {
   font-weight: 600;
-  padding-right: 10px;
+  padding-right: 30px;
   color: black;
 }
 @media screen and (max-width: 768px) {
