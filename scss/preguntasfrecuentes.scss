@@ -1,0 +1,13 @@
+@import 'header-footer.scss';
+
+.accordion-button {
+    background-color: #D39D2F; 
+    color: #fff; }
+
+.accordion-button[aria-expanded="true"] {
+        background-color: #EDB748; 
+    }
+
+    .accordion-body {
+        color: #7E6634; 
+    }
